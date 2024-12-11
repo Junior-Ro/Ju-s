@@ -65,10 +65,10 @@
             justify-content: center;
         }
         .hero h1 {
-    margin-bottom: 20px;
-    font-size: 2.5rem;
-    color: black; /* Mudei a cor do texto para preto */
-	}
+            margin-bottom: 20px;
+            font-size: 2.5rem;
+            color: black; /* Mudei a cor do texto para preto */
+        }
         .whatsapp-button {
             background-color: #25D366;
             color: white;
@@ -162,6 +162,50 @@
             color: #333;
             text-decoration: none;
             font-weight: bold;
+        }
+
+        /* Adições para responsividade em dispositivos móveis */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem; /* Reduz o tamanho do texto no cabeçalho */
+            }
+            nav {
+                flex-direction: column; /* Menu em coluna para melhor uso de espaço */
+                padding: 5px 0;
+            }
+            nav a {
+                margin: 5px 0;
+            }
+            .hero {
+                height: 200px; /* Reduz a altura da seção hero */
+                padding: 10px;
+            }
+            .hero h1 {
+                font-size: 1.8rem; /* Texto menor na seção hero */
+            }
+            .whatsapp-button {
+                font-size: 1rem; /* Botão menor */
+                padding: 10px 20px;
+            }
+            .services ul {
+                flex-direction: column; /* Serviços em coluna para evitar quebra */
+            }
+            .services ul li {
+                width: 90%; /* Adapta a largura ao tamanho da tela */
+                margin: 10px auto;
+            }
+            .gallery-images {
+                flex-direction: column; /* Galeria em coluna para evitar quebra */
+            }
+            .gallery img {
+                max-width: 90%; /* Ajusta as imagens ao tamanho da tela */
+            }
+            .testimonials p {
+                font-size: 0.9rem; /* Texto menor nos depoimentos */
+            }
+            footer p {
+                font-size: 0.8rem; /* Texto menor no rodapé */
+            }
         }
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
