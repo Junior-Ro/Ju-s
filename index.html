@@ -15,15 +15,24 @@
         header {
             background: black;
             color: white;
-            padding: 20px;
+            padding: 0;
             text-align: center;
             position: relative;
         }
         header img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+        header h1 {
             position: absolute;
-            top: 10px;
-            left: 10px;
-            height: 50px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-family: 'Bangers', sans-serif;
+            font-size: 3.5rem;
+            color: black;
+            text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.7);
         }
         nav {
             display: flex;
@@ -51,9 +60,15 @@
             height: 300px;
             color: white;
             display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
         }
+        .hero h1 {
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    color: black; /* Mudei a cor do texto para preto */
+	}
         .whatsapp-button {
             background-color: #25D366;
             color: white;
@@ -150,11 +165,11 @@
         }
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <img src="logo.webp" alt="Logo da empresa">
-        <h1>Ju's Automotive Aesthetic</h1>
     </header>
     <nav>
         <a href="#home">Início</a>
@@ -164,13 +179,20 @@
         <a href="#contact">Contato</a>
     </nav>
     <section id="home" class="hero">
+        <h1>Ju's Automotive Aesthetic</h1>
         <a href="https://wa.me/5511947143634" target="_blank">
             <button class="whatsapp-button">Deixe seu carro como novo!</button>
         </a>
     </section>
     <section id="about" class="container">
         <h2>Sobre Nós</h2>
-        <p>Na Ju's Automotive Aesthetic, somos especializados em transformar e preservar a estética automotiva...</p>
+        <p>Na Ju's Automotive Aesthetic, nossa missão é transformar e preservar a estética do seu carro com excelência e dedicação. Somos especializados em serviços automotivos que vão além da simples limpeza: buscamos proporcionar uma experiência única, elevando o visual e a proteção do seu veículo.
+
+Com anos de experiência no mercado e uma equipe altamente qualificada, oferecemos serviços de polimento, vitrificação, limpeza interna e restauração de faróis, entre outros, com o objetivo de garantir que o seu carro esteja sempre como novo. Trabalhamos com os melhores produtos do mercado e as mais avançadas técnicas para entregar resultados impecáveis.
+
+Nosso compromisso é com a qualidade, a satisfação do cliente e o cuidado em cada detalhe. Sabemos que um carro bem cuidado reflete o estilo de vida de seu dono e, por isso, tratamos cada veículo com a atenção e respeito que ele merece.
+
+Seja para dar aquele brilho extra, proteger a pintura ou restaurar a beleza do interior, a Ju's Automotive Aesthetic é a escolha certa para quem busca qualidade, confiança e um serviço personalizado.</p>
     </section>
     <section id="services" class="container services">
         <h2>Serviços</h2>
@@ -203,12 +225,12 @@
     <section id="testimonials" class="container testimonials">
         <h2>Depoimentos</h2>
         <p>
-            "Serviço impecável! Meu carro nunca esteve tão bonito." - Cliente Satisfeito
+            "Serviço impecável! Meu carro nunca esteve tão bonito." - Juan Tito
             <br>
             <img src="cliente1.jpeg" alt="Foto do cliente">
         </p>
         <p>
-            "A equipe da Ju's Automotive Aesthetic é excelente. Recomendo!" - João Silva
+            "A equipe da Ju's Automotive Aesthetic é excelente e muito linda. Recomendo!" - João Teles
             <br>
             <img src="cliente2.jpeg" alt="Foto do cliente">
         </p>
